@@ -9,7 +9,7 @@ client = ollama.Client()
 try:
     while True:
         prompt = input(f'\nAsk {model}?\n')
-        if prompt == 'bye':
+        if prompt == '/bye':
             break
         
         stream = client.chat(
