@@ -8,11 +8,13 @@ device_name = torch.cuda.get_device_name(0) if gpu_available else "No GPU found"
 print(f"GPU Available: {gpu_available}")
 print(f"GPU Name: {device_name}")
 
-model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+model_id1 = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+model_id2 = "meta-llama/Llama-3.2-1B"
+model_id3 = "meta-llama/Llama-3.1-8B"
 
 pipeline1 = pipeline(
     "text-generation",
-    model=model_id,
+    model=model_id1,
     model_kwargs={"torch_dtype": torch.bfloat16},
     device_map="auto",
 )

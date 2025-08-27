@@ -5,10 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "accelerate>=1.10.1",
+    "bs4>=0.0.2",
     "langchain>=0.3.27",
     "langchain-huggingface>=0.3.1",
-    "mamba-ssm",
     "ollama>=0.5.3",
+    "requests>=2.32.5",
     "torch>=2.8.0",
     "torchaudio>=2.8.0",
     "torchvision>=0.23.0",

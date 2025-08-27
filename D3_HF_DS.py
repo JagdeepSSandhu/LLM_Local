@@ -2,9 +2,9 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-#LLM = "deepseek-ai/DeepSeek-V3.1-Base"
+LLM = "deepseek-ai/DeepSeek-V3.1-Base"
 #LLM = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-LLM = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+#LLM = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
 
 
 tokenizer = AutoTokenizer.from_pretrained(LLM, trust_remote_code=True)
