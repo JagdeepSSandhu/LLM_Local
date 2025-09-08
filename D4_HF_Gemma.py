@@ -6,8 +6,8 @@ from transformers import pipeline
 # "google/gemma-2b-it" is an instruction-tuned version, great for Q&A.
 pipe = pipeline(
     "text-generation",
-    model="google/gemma-2b-it",
-    #model="google/gemma-3-4b-it",
+    #model="google/gemma-2b-it",
+    model="google/gemma-3-4b-it",
     ##model="unsloth/gemma-3-27b-it-qat",
     model_kwargs={"torch_dtype": torch.bfloat16}, # Use bfloat16 for less memory
     device="cuda", # Use "cuda" for GPU or "cpu" for CPU
