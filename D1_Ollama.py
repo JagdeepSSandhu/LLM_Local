@@ -1,9 +1,10 @@
 import ollama
 
-model1 = 'gemma3'
+model0 = 'gemma3:1b'
+model1 = 'gemma3:latest'
 model2 = 'llama3.1'
 model3 = 'gpt-oss'
-model = model1
+model = model0
 
 client = ollama.Client()
 try:

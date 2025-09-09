@@ -88,7 +88,7 @@ User Request: {user_query}
     # Note: Ensure the Ollama server is running and the model is downloaded.
     try:
         response = ollama.chat(
-            model='gemma3', # Use the model name you pulled
+            model='gemma3:latest', # Use the model name you pulled
             messages=[{'role': 'user', 'content': prompt}],
             options={'temperature': 0.1} # Lower temperature for more predictable JSON output
         )
